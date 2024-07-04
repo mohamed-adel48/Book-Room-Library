@@ -20,3 +20,6 @@
   - HTML, CSS, JavaScript
 * Backend:
   - .NET Framework
+ ---
+ ## Project Size 
+ ! [Code Size](https://img.shields.io/badge/any_text-you_like-blue)
