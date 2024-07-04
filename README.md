@@ -22,5 +22,5 @@
   - .NET Framework
  ---
  ## Project Size 
- ! [Static Badge](https://img.shields.io/badge/:badgeContent)
+ ![Static Badge](https://img.shields.io/badge/:badgeContent)
 
