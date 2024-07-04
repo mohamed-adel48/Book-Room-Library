@@ -18,5 +18,5 @@
  ## Technologies Used:
 * Frontend:
   - HTML, CSS, JavaScript
-*Backend:
+* Backend:
 - .NET Framework
