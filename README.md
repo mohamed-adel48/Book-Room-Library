@@ -16,4 +16,7 @@
   - Reach out for support or provide feedback through the Contact page.
     
  ## Technologies Used:
-    
+* Frontend:
+  - HTML, CSS, JavaScript
+*Backend:
+- .NET Framework
