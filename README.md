@@ -22,4 +22,4 @@
   - .NET Framework
  ---
  ## Project Size 
- ! [Code Size](https://img.shields.io/badge/any_text-you_like-blue)
+ ! [Code Size](https://img.shields.io/github/languages/code-size/olton/Metro-UI-CSS.svg?color=830000)
