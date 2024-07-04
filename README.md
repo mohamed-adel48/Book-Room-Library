@@ -1,16 +1,19 @@
 # Book-Room-Library - Online Bookstore
-- Welcome to **Book Room**, an online bookstore built with HTML, CSS, JavaScript, and .NET. This repository hosts the front-end and back-end code for a comprehensive book-selling platform.
+- This repository hosts the front-end and back-end code for a comprehensive book-selling platform.
 - 
 ## Pages Included:
 * **Home Page**:
-  - Discover a curated selection of books across various genres, featured reads, and special promotions right from the homepage.
+  - Discover a curated selection of books, explore featured reads, and view special promotions.
 * **Books**:
-  - Browse our extensive library categorized by genre, author, and popularity. Each book listing includes detailed descriptions, reviews, and related recommendations to guide your selection.
+  - Browse and search for books by genre, author, or popularity. View detailed book descriptions, reviews, and related recommendations.
 * **Favorites**:
-  - Create and manage your reading list by adding books to your Favorites. Easily revisit and update your list whenever you find new favourites.
+  - Create, manage, and update a personalized list of favourite books for easy reference.
 * **Account**:
-  - Creating an account on Book Room allows users to manage favourite books, track orders, update profiles, and enjoy a tailored shopping experience.
+  - Sign up to personalize your experience. Sign in to access and manage your favourite books, view order history, and update your profile.
 * **Order**:
   - users add books to their cart, calculate total costs with discounts, securely checkout, and track orders conveniently from their account dashboard.
-
+* **Contact**:
+  - Reach out for support or provide feedback through the Contact page.
+    
+ ## Technologies Used:
     
