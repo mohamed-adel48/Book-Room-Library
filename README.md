@@ -19,4 +19,4 @@
 * Frontend:
   - HTML, CSS, JavaScript
 * Backend:
-- .NET Framework
+  - .NET Framework
