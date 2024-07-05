@@ -1,0 +1,305 @@
+@{
+    ViewData["Title"] = "ebooks";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Books | Book Room </title>
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/29/29302.png" type="image/gif" sizes="16x16">
+
+    <link
+      href="https://fonts.googleapis.com/css2?
+      family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!------------------ Header ------------------>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="~/Home/index">
+            <div>
+              <span class="clrm-teal-dark-1--">BOOK</span>
+              <span class="clrm-teal-dark-1">ROOM</span>
+            </div>
+          </a>
+        </div>
+        <!----------  Nav Bar ------------------>
+        <nav>
+            <ul id="MenuItems">
+              <li><a href="~/Home/index">Home</a></li>
+              <li><a href="~/Home/ebooks">Books</a></li>
+              <li><a href="~/Home/favorite">Favorite</a></li>
+              <li><a href="~/Home/contact">Contact</a></li>
+              <li><a href="~/Home/accountSignIn">Account</a></li>
+            </ul>
+        </nav>
+        <a href="~/Home/cart">
+          <img
+            src="~/images/cart.png"
+            alt="Shoping Cart"
+            width="28px"
+            height="28px"
+            style="margin-left: 10px; margin-top: 15px"
+          />
+        </a>
+      </div>
+    </div>
+
+    <div class="small-container">
+      <div class="row row-2">
+        <h2>All Books</h2>
+        <select>
+          <option>Default sorting</option>
+          <option>Sort by price</option>
+          <option>Sort by popularity</option>
+          <option>Sort by rating</option>
+          <option>Sort by sale</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <a href="~/Home/book1">
+            <img src="~/images/Book 4.jpg" alt="Book 4" />
+          </a>
+          <a href="~/book1"> <h4>Anna Karenina</h4> </a>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>50 EGP</p>
+        </div>
+        <div class="col-4">
+          <a href="~/Home/book2">
+          <img src="~/images/Book 5.jpg" alt="Book 5" />
+        </a>
+          <h4>Watership Down</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>50 EGP</p>
+        </div>
+        <div class="col-4">
+          <img src="~/images/Book 6.jpg" alt="Book 6" />
+          <h4>All The Night We Cannot See</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>50 EGP</p>
+        </div>
+        <div class="col-4">
+          <img src="~/images/Book 7.jpg" alt="Book 7" />
+          <h4>The HOBBIT</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>50 EGP</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <img src="~/images/Book 8.jpg" alt="Book 8" />
+          <h4>Anna Karenina</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>50 EGP</p>
+        </div>
+        <div class="col-4">
+          <img src="~/images/Book 9.jpg" alt="Book 9" />
+          <h4>Watership Down</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>50 EGP</p>
+        </div>
+        <div class="col-4">
+          <img src="~/images/Book 10.jpg" alt="Book 10" />
+          <h4>All The Night We Cannot See</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>50 EGP</p>
+        </div>
+        <div class="col-4">
+          <img src="~/images/Book 11.jpg" alt="Book 11" />
+          <h4>The HOBBIT</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>50 EGP</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <img src="~/images/Book 12.jpg" alt="Book 12" />
+          <h4>Anna Karenina</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>50 EGP</p>
+        </div>
+        <div class="col-4">
+          <img src="~/images/Book 13.jpg" alt="Book 13" />
+          <h4>Watership Down</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>50 EGP</p>
+        </div>
+        <div class="col-4">
+          <img src="~/images/Book 14.jpg" alt="Book 14" />
+          <h4>All The Night We Cannot See</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>50 EGP</p>
+        </div>
+        <div class="col-4">
+          <img src="~/images/Book 15.jpg" alt="Book 15" />
+          <h4>The HOBBIT</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>50 EGP</p>
+        </div>
+      </div>
+	  <!-- ---------------------Youtube Video------------------- -->
+    <div class="youtube-container">
+      <div class="youtube-row">
+        <div class="col-2">
+          <h2>5 Books You Must Read If You're Serious About Success</h2>
+        </div>
+        <div class="col-2">
+          <iframe
+            id="youtubevideo"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/LqJBXtG9xxk"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+	  <!-- -->
+      <div class="page-btn">
+        <span><a href="~/Home/ebooks">1</a></span>
+        <span><a href="~/Home/ebooks2">2</a></span>
+        <span>3</span>
+        <span>4</span>
+        <span>&#8594;</span>
+      </div>
+    </div>
+        <!-- ---------------------footer------------------- -->
+        <div id="containerFooter">
+                
+          <div id="webFooter">
+              <h3> online store </h3>
+              <p> Arabic Books </p>
+              <p> English Books </p>
+              <p> Italian books </p>
+              <p> Spanish books </p>
+          </div>
+          <div id="webFooter">
+              <h3> helpful link </h3>
+              <p> <a href="~/Home/index">Home</a> </p>
+              <p> about us </p>
+               <p> <a href="~/Home/contact">contact</a> </p>
+          </div>
+          <div id="webFooter">
+            <h3> Follow Us </h3>
+            <p> Facebook </p>
+            <p> Instagram </p>
+            <p> Youtube </p>
+            <p> Twitter  </p>
+          </div>
+          <div id="webFooter">
+            <h3> Store Location </h3>
+            <p> <a href="https://goo.gl/maps/E7gmKUcg3mKDbMZE8" target="_blank">6 October</a> </p>
+            <p> <a href="https://goo.gl/maps/c2RiEaxQYtzk4K826" target="_blank">Haram</a></p>
+            <p><a href="https://goo.gl/maps/h9Ycs5YVQmjdYcjH7" target="_blank">New Cairo</a> </p>
+            <p> <a href="https://goo.gl/maps/hfxs8KKNHgLC3VnF7" target="_blank">Nasr City</a></p>
+            <p> + many more </p>
+          </div>
+          </div>
+      </div>
+      
+      <div id="credit"><a href="https://www.instagram.com/mohamedadel_4/" target="_blank"> © Mohamed Adel </a> &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp <a href="https://www.instagram.com/amrbasiony300/" target="_blank"> Amr Basiony </a> &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp 
+          <a href="https://www.instagram.com/ismail_elhussein/" target="_blank"> ismail Elhussein </a> &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp <a href="https://www.instagram.com/karimkhalill_/" target="_blank"> karim khalill</a> 
+          &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp <a href="https://www.instagram.com/ma_rk_malak/" target="_blank"> Mark Malak </a> </div>
+    <!-- ---------Javascript for toggle menu------------- -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>

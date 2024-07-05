@@ -1,0 +1,199 @@
+@{
+    ViewData["Title"] = "book3";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book-detailpage | Book Room </title>
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/29/29302.png" type="image/gif" sizes="16x16">
+
+    <link
+      href="https://fonts.googleapis.com/css2?
+      family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!------------------ Header ------------------>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="~/Home/index">
+            <div>
+              <span class="clrm-teal-dark-1--">BOOK</span>
+              <span class="clrm-teal-dark-1">ROOM</span>
+            </div>
+          </a>
+        </div>
+        <!----------  Nav Bar ------------------>
+        <nav>
+            <ul id="MenuItems">
+              <li><a href="~/Home/index">Home</a></li>
+              <li><a href="~/Home/ebooks">Books</a></li>
+              <li><a href="~/Home/favorite">Favorite</a></li>
+              <li><a href="~/Home/contact">Contact</a></li>
+              <li><a href="~/Home/accountSignIn">Account</a></li>
+            </ul>
+        </nav>
+        <a href="~/Home/cart">
+          <img
+            src="~/images/cart.png"
+            alt="Shoping Cart"
+            width="28px"
+            height="28px"
+            style="margin-left: 10px; margin-top: 15px"
+          />
+        </a>
+      </div>
+    </div>
+
+    <!-- ----------single product details------------- -->
+    <div class="small-container single-product">
+      <div class="row">
+        <div class="col-2">
+          <img src="~/images/Book 17.jpg" alt="Book17" width="68%" />
+        </div>
+        <div class="col-2">
+          <p> <a href="~/Home/index">Home</a>  / Book Room</p>
+          <h1>Operating System Concepts</h1>
+          <h4>50 EGP</h4>
+          <input type="number" value="1" />
+          <a href="" class="btn">Add To Cart</a>
+          <a href="~/Home/favorite" target="_blank" class="btn1" title ="Add To Favorite">❤️</a>
+          <h3>Book Deatails <i class="fa fa-indent"></i></h3>
+          <br />
+          <p>
+            The main software when using the computer is the operating system. 
+            The operating system defines all the experiences when using a computer;
+            it manages the hardware and software resources of the computer system,
+            provides a way for applications to deal with the hardware without 
+            having to know all the details of the hardware, and it is the software
+            that makes all the programs work. It organizes and controls the hardware
+            on computers. The operating system is the first software we see when we
+            turn on the computer, and the last software we see when the computer is turned off.
+
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------title----------------- -->
+    <div class="small-container">
+      <div class="row row-2">
+        <h2>Related Books</h2>
+        <p class="view"><a href="~/Home/ebooks">View More</a></p>
+      </div>
+    </div>
+    <!-- --------------Product-------------- -->
+    <div class="small-container">
+      <div class="row">
+        <div class="col-4">
+          <img src="~/images/Book 18.jpg" alt="Book 18" />
+          <h4>Introduction to Database System</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>50 EGP</p>
+        </div>
+        <div class="col-4">
+          <img src="~/images/Book 19.png" alt="Book 19" />
+          <h4>Beginning SQL Queries</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>50 EGP</p>
+        </div>
+        <div class="col-4">
+          <img src="~/images/Book 20.jpg" alt="Book 20" />
+          <h4>Introduction to Algorithms</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>50 EGP</p>
+        </div>
+        <div class="col-4">
+          <img src="~/images/Book 21.jpeg" alt="Book 21" />
+          <h4>C++ Programming Language</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>50 EGP</p>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------footer------------------- -->
+    <div id="containerFooter">
+                
+      <div id="webFooter">
+          <h3> online store </h3>
+          <p> Arabic Books </p>
+          <p> English Books </p>
+          <p> Italian books </p>
+          <p> Spanish books </p>
+      </div>
+      <div id="webFooter">
+          <h3> helpful link </h3>
+          <p> <a href="~/Home/index">Home</a> </p>
+          <p> about us </p>
+         <p> <a href="~/Home/contact">contact</a> </p>
+      </div>
+      <div id="webFooter">
+        <h3> Follow Us </h3>
+        <p> Facebook </p>
+        <p> Instagram </p>
+        <p> Youtube </p>
+        <p> Twitter  </p>
+      </div>
+      <div id="webFooter">
+        <h3> Store Location </h3>
+        <p> <a href="https://goo.gl/maps/E7gmKUcg3mKDbMZE8" target="_blank">6 October</a> </p>
+        <p> <a href="https://goo.gl/maps/c2RiEaxQYtzk4K826" target="_blank">Haram</a></p>
+        <p><a href="https://goo.gl/maps/h9Ycs5YVQmjdYcjH7" target="_blank">New Cairo</a> </p>
+        <p> <a href="https://goo.gl/maps/hfxs8KKNHgLC3VnF7" target="_blank">Nasr City</a></p>
+        <p> + many more </p>
+    </div>
+  </div>
+  
+  <div id="credit"><a href="https://www.instagram.com/mohamedadel_4/" target="_blank"> © Mohamed Adel </a> &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp <a href="https://www.instagram.com/amrbasiony300/" target="_blank"> Amr Basiony </a> &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp 
+      <a href="https://www.instagram.com/ismail_elhussein/" target="_blank"> ismail Elhussein </a> &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp <a href="https://www.instagram.com/karimkhalill_/" target="_blank"> karim khalill</a> 
+      &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp <a href="https://www.instagram.com/ma_rk_malak/" target="_blank"> Mark Malak </a> </div>
+    <!-- ---------Javascript for toggle menu------------- -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>

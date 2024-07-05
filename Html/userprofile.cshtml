@@ -1,0 +1,181 @@
+@{
+    ViewData["Title"] = "userprofile";
+}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>User Profile | Book Room </title>
+		<link rel="stylesheet" href="~/css/style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/29/29302.png" type="image/gif" sizes="16x16">
+		<link
+		  href="https://fonts.googleapis.com/css2?
+		  family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+		  rel="stylesheet"
+		/>
+		<link
+		  rel="stylesheet"
+		  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+	  </head>
+<body>
+	    <!------------------ Header ------------------>
+		<div class="container">
+			<div class="navbar">
+			  <div class="logo">
+				<a href="~/Home/index">
+				  <div>
+					<span class="clrm-teal-dark-1--">BOOK</span>
+					<span class="clrm-teal-dark-1">ROOM</span>
+				  </div>
+				</a>
+			  </div>
+			  <!----------  Nav Bar ------------------>
+			  <nav>
+				<ul id="MenuItems">
+				  <li><a href="~/Home/index">Home</a></li>
+				  <li><a href="~/Home/ebooks">Books</a></li>
+				  <li><a href="~/Home/favorite">Favorite</a></li>
+				  <li><a href="~/Home/contact">Contact</a></li>
+				  <li><a href="~/Home/accountSignIn">Account</a></li>
+				</ul>
+			  </nav>
+			  <a href="~/Home/cart">
+				<img
+				  src="~/images/cart.png"
+				  alt="Shoping Cart"
+				  width="28px"
+				  height="28px"
+				  style="margin-left: 10px; margin-top: 15px"
+				/>
+			  </a>
+			</div>
+		  </div>
+
+	<div class="containeruser">
+		<div class="profile">
+			<h2>User Profile</h2>
+			<form>
+				<div>
+					<label for="username">Username:</label>
+					<input type="text" id="username" class="field" name="username" value="dola" placeholder="Write Your Name" disabled>
+				</div>
+				<div>
+					<label for="email">Email:</label>
+					<input type="email" id="email" class="field" name="email" value="dola@example.com" placeholder="dola@example.com" disabled>
+				</div>
+				<div>
+					<label for="password">Password:</label>
+					<input type="password" id="password" class="field" name="password" value="password"  placeholder="Write Your Password" disabled><br></br>
+					<input type="checkbox" onclick="myFunction()"> Show Password
+
+					
+				</div>
+				@* <div>
+					<label for="address">Address:</label>
+					<textarea id="address" name="address" placeholder="Write Your Address" disabled>6 October, Giza Egypt </textarea>
+				</div> *@
+				<button type="button" id="edit-btn">Edit</button>
+				<button type="submit" id="save-btn" disabled>Save</button>
+			</form>
+		</div>
+	</div>
+	 <!-- ---------------------footer------------------- -->
+	 <div id="containerFooter">
+                
+		<div id="webFooter">
+			<h3> online store </h3>
+			<p> Arabic Books </p>
+			<p> English Books </p>
+			<p> Italian books </p>
+			<p> Spanish books </p>
+		</div>
+		<div id="webFooter">
+			<h3> helpful link </h3>
+			<p> <a href="~/Home/index">Home</a> </p>
+			<p> about us </p>
+			 <p> <a href="~/Home/contact">contact</a> </p>
+		</div>
+		<div id="webFooter">
+		  <h3> Follow Us </h3>
+		  <p> Facebook </p>
+		  <p> Instagram </p>
+		  <p> Youtube </p>
+		  <p> Twitter  </p>
+		</div>
+		<div id="webFooter">
+		  <h3> Store Location </h3>
+		  <p> <a href="https://goo.gl/maps/E7gmKUcg3mKDbMZE8" target="_blank">6 October</a> </p>
+		  <p> <a href="https://goo.gl/maps/c2RiEaxQYtzk4K826" target="_blank">Haram</a></p>
+		  <p><a href="https://goo.gl/maps/h9Ycs5YVQmjdYcjH7" target="_blank">New Cairo</a> </p>
+		  <p> <a href="https://goo.gl/maps/hfxs8KKNHgLC3VnF7" target="_blank">Nasr City</a></p>
+		  <p> + many more </p>
+	  </div>
+	</div>
+	
+	<div id="credit"><a href="https://www.instagram.com/mohamedadel_4/" target="_blank"> © Mohamed Adel </a> &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp <a href="https://www.instagram.com/amrbasiony300/" target="_blank"> Amr Basiony </a> &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp 
+		<a href="https://www.instagram.com/ismail_elhussein/" target="_blank"> ismail Elhussein </a> &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp <a href="https://www.instagram.com/karimkhalill_/" target="_blank"> karim khalill</a> 
+		&nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp <a href="https://www.instagram.com/ma_rk_malak/" target="_blank"> Mark Malak </a> </div>
+	  <!-- ---------Javascript for toggle menu------------- -->
+<script>
+		var MenuItems = document.getElementById("MenuItems");
+		MenuItems.style.maxHeight = "0px";
+		function menutoggle() {
+		  if (MenuItems.style.maxHeight == "0px") {
+			MenuItems.style.maxHeight = "200px";
+		  } else {
+			MenuItems.style.maxHeight = "0px";
+		  }
+		}
+		const editBtn = document.getElementById('edit-btn');
+		const saveBtn = document.getElementById('save-btn');
+		const inputs = document.querySelectorAll('input, textarea');
+
+		editBtn.addEventListener('click', () => {
+				// enable input fields
+				inputs.forEach(input => {
+					input.disabled = false;
+				});
+
+				// enable save button
+				saveBtn.disabled = false;
+
+				// disable edit button
+				editBtn.disabled = true;
+			});
+
+		saveBtn.addEventListener('click', () => {
+			// disable input fields
+			inputs.forEach(input => {
+				input.disabled = true;
+					});
+
+				// disable save button
+				saveBtn.disabled = true;
+
+				// enable edit button
+				editBtn.disabled = false;
+		});
+		function myFunction() {
+			var x = document.getElementById("password");
+			if (x.type === "password") {
+			x.type = "text";
+			} else {
+			x.type = "password";
+			}
+		}
+
+		var MenuItems = document.getElementById("MenuItems");
+		MenuItems.style.maxHeight = "0px";
+		function menutoggle() {
+			if (MenuItems.style.maxHeight == "0px") {
+			MenuItems.style.maxHeight = "200px";
+			} else {
+			MenuItems.style.maxHeight = "0px";
+			}
+		}
+</script>
+</body>
+</html>
