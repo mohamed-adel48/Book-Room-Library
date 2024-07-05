@@ -1,0 +1,277 @@
+﻿
+@{
+    ViewBag.Title = "ebook5";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Books (5) | Book Room </title>
+    <link rel="stylesheet" href="~/CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/29/29302.png" type="image/gif" sizes="16x16">
+
+    <link href="https://fonts.googleapis.com/css2?
+      family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+          rel="stylesheet" />
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <!------------------ Header ------------------>
+    @{
+        if (Request.Cookies["username"] != null)
+        {
+            @Html.Partial("nav_user")
+        }
+        else
+        {
+            @Html.Partial("nav_notuser")
+        }
+    }
+
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>All Books</h2>
+            <select>
+                <option>Default sorting</option>
+                <option>Sort by price</option>
+                <option>Sort by popularity</option>
+                <option>Sort by rating</option>
+                <option>Sort by sale</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <img src="~/images/Book 53.jpg" alt="Book 53" />
+                <h4>Lazarillo de Tormes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50 EGP</p>
+            </div>
+            <div class="col-4">
+                <img src="~/images/Book 54.jpg" alt="Book 54" />
+                <h4>La Sombra del Viento</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50 EGP</p>
+            </div>
+            <div class="col-4">
+                <img src="~/images/Book 55.jpg" alt="Book 55" />
+                <h4>De Riquelme a Messi</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>50 EGP</p>
+            </div>
+            <div class="col-4">
+                <img src="~/images/Book 56.jpg" alt="Book 56" />
+                <h4>Bodas de Sangre</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50 EGP</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="~/images/Book 57.jpg" alt="Book 57" />
+                <h4>The Seville Communion</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50 EGP</p>
+            </div>
+            <div class="col-4">
+                <img src="~/images/Book 58.jpg" alt="Book 58" />
+                <h4>Christ versus Arizona</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50 EGP</p>
+            </div>
+            <div class="col-4">
+                <img src="~/images/Book 59.jpg" alt="Book 59" />
+                <h4>La palabra que no encuentras</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>50 EGP</p>
+            </div>
+            <div class="col-4">
+                <img src="~/images/Book 60.jpg" alt="Book 60" />
+                <h4>Don Quixote</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50 EGP</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="~/images/Book 61.jpg" alt="Book 61" />
+                <h4>En busca de mi flor</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50 EGP</p>
+            </div>
+            <div class="col-4">
+                <img src="~/images/Book 62.jpg" alt="Book 62" />
+                <h4>EL ReVERSO DE LA LUNA</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50 EGP</p>
+            </div>
+            <div class="col-4">
+                <img src="~/images/Book 63.jpg" alt="Book 63" />
+                <h4>El Siguiente</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>50 EGP</p>
+            </div>
+            <div class="col-4">
+                <img src="~/images/Book 64.jpg" alt="Book 64" />
+                <h4>Puzles de Ajedrez</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50 EGP</p>
+            </div>
+        </div>
+        <!-- ---------------------Youtube Video------------------- -->
+        <div class="youtube-container">
+            <div class="youtube-row">
+                <div class="col-2">
+                    <h2>7 Spanish books for beginners</h2>
+                </div>
+                <div class="col-2">
+                    <iframe width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/U3HndX2QnSo"
+                            title="YouTube video player"
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- -->
+        <div class="page-btn">
+            <span><a href="/Index/ebook5">5</a></span>
+            <span><a href="">6</a></span>
+            <span><a href="">7</a></span>
+            <span><a href="">8</a></span>
+            <span>&#8594;</span>
+        </div>
+    </div>
+    <!-- ---------------------footer------------------- -->
+    <div id="containerFooter">
+
+        <div id="webFooter">
+            <h3> online store </h3>
+            <p><a href="/Index/arabicbooks">Arabic Books</a></p>
+            <p><a href="/Index/ebook">English Books</a></p>
+            <p><a href="/Index/italianbooks">Italian books</a></p>
+            <p><a href="/Index/spanishbooks">Spanish books</a></p>
+        </div>
+        <div id="webFooter">
+            <h3> helpful link </h3>
+            <p> <a href="/Index/index">Home</a> </p>
+            <p> about us </p>
+            <p><a href="/Index/contact">contact</a> </p>
+        </div>
+        <div id="webFooter">
+            <h3> Follow Us </h3>
+            <p> Facebook </p>
+            <p> Instagram </p>
+            <p> Youtube </p>
+            <p> Twitter  </p>
+        </div>
+        <div id="webFooter">
+            <h3> Store Location </h3>
+            <p> <a href="https://goo.gl/maps/E7gmKUcg3mKDbMZE8" target="_blank">6 October</a> </p>
+            <p> <a href="https://goo.gl/maps/c2RiEaxQYtzk4K826" target="_blank">Haram</a></p>
+            <p><a href="https://goo.gl/maps/h9Ycs5YVQmjdYcjH7" target="_blank">New Cairo</a> </p>
+            <p> <a href="https://goo.gl/maps/hfxs8KKNHgLC3VnF7" target="_blank">Nasr City</a></p>
+            <p> + many more </p>
+        </div>
+    </div>
+    </div>
+
+    <div id="credit">
+        <a href="https://www.instagram.com/mohamedadel_4/" target="_blank"> © Mohamed Adel </a> &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp <a href="https://www.instagram.com/amrbasiony300/" target="_blank"> Amr Basiony </a> &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp
+        <a href="https://www.instagram.com/ismail_elhussein/" target="_blank"> ismail Elhussein </a> &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp <a href="https://www.instagram.com/karimkhalill_/" target="_blank"> karim khalill</a>
+        &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp <a href="https://www.instagram.com/ma_rk_malak/" target="_blank"> Mark Malak </a>
+    </div>
+    <!-- ---------Javascript for toggle menu------------- -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
+

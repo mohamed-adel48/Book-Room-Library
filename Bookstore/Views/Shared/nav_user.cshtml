@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewBag.Title = "nav_user";
+}
+
+<link rel="stylesheet" href="~/CSS/navstyle.css" />
+
+<header>
+    <div class="logo" alt="logo">
+        <a href="/Index/index" class="logo-text">
+            <div>
+                <span class="clrm-teal-dark-1--">BOOK</span>
+                <span class="clrm-teal-dark-1">ROOM</span>
+            </div>
+        </a>
+    </div>
+    <div class="group">
+        <ul class="navigation">
+            <li><a href="/Index/index">Home</a></li>
+            <li><a href="/Index/ebook">Books</a></li>
+            <li><a href="/Index/favorite">Favorite</a></li>
+            <li><a href="/Index/userprofile">Profile</a></li>
+        </ul>
+
+        <a href="/Index/cart" class="cart">
+            <img src="~/images/cart.png"
+                 alt="Shoping Cart"
+                 width="28px"
+                 height="28px"
+                 style="margin-left: 10px; margin-top: 15px" />
+        </a>
+        @{
+                if (Request.Url.AbsolutePath != "/Index/index" && Request.Url.AbsolutePath != "/Index/favorite" && Request.Url.AbsolutePath != "/Index/account" && Request.Url.AbsolutePath != "/Index/cart")
+            {
+                <div class="search">
+                    <span class="icon">
+                        <ion-icon name="search-outline" class="searchBtn"></ion-icon>
+                        <ion-icon name="close-outline" class="closeBtn"></ion-icon>
+                    </span>
+                </div>
+            }
+        }
+    </div>
+    <div class="searchBox">
+        <input type="text" placeholder="Search here..." id="searchText">
+        <ul id="suggestions-list"></ul>
+
+    </div>
+</header>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script>
+  
+
+    window.onscroll = function () { myFunction() };
+
+    // Get the header
+    var header = document.querySelector("header");
+
+    // Get the offset position of the navbar
+    var sticky = header.offsetTop;
+
+    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+</script>
+

@@ -1,0 +1,359 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Book Room </title>
+    <link rel="stylesheet" href="~/CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/29/29302.png" type="image/gif" sizes="16x16">
+
+    <link href="https://fonts.googleapis.com/css2?
+      family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+          rel="stylesheet" />
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <!------------------ Header ------------------>
+    @{
+        if (Request.Cookies["username"] != null)
+        {
+            @Html.Partial("nav_user")
+        }
+        else
+        {
+            @Html.Partial("nav_notuser")
+        }
+    }
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <h1>
+                        The Books Lover<br />
+                        Read all About it!
+                    </h1>
+                    <p>
+                        “Life is a book and there are a thousand pages I have not yet read”<br />
+                        ― Cassandra Clare, Clockwork Princess
+                    </p>
+                    <a href="/Index/ebook" class="btn">Explore Now &#x27F6;</a>
+                </div>
+                <div class="col-2">
+                    <img src="~/images/books.png" alt="Header Pic" width="650" height="650" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------featured categories -------------------->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="~/images/Book 1.jpg" alt="Book 1" />
+                </div>
+                <div class="col-3">
+                    <img src="~/images/Book 2.jpg" alt="Book 2" />
+                </div>
+                <div class="col-3">
+                    <img src="~/images/Book 3.jpg" alt="Book 3" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------featured Books -------------------->
+    <div class="small-container">
+        <h2 class="title">Featured Titles</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="/Index/book1">
+                    <img src="~/images/Book 4.jpg" alt="Book 4" />
+                </a>
+                <a href="/Index/book1"> <h4>Anna Karenina</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50 EGP</p>
+            </div>
+            <div class="col-4">
+                <a href="/Index/book2">
+                    <img src="~/images/Book 5.jpg" alt="Book 5" />
+                </a>
+                <h4>Watership Down</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50 EGP</p>
+            </div>
+            <div class="col-4">
+                <img src="~/images/Book 6.jpg" alt="Book 6" />
+                <h4>All The Night We Cannot See</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>50 EGP</p>
+            </div>
+            <div class="col-4">
+                <img src="~/images/Book 7.jpg" alt="Book 7" />
+                <h4>The HOBBIT</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50 EGP</p>
+            </div>
+        </div>
+        <h2 class="title">Bestsellers</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="~/images/Book 8.jpg" alt="Book 8" />
+                <h4>Anna Karenina</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50 EGP</p>
+            </div>
+            <div class="col-4">
+                <img src="~/images/Book 9.jpg" alt="Book 9" />
+                <h4>Watership Down</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50 EGP</p>
+            </div>
+            <div class="col-4">
+                <img src="~/images/Book 10.jpg" alt="Book 10" />
+                <h4>All The Night We Cannot See</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>50 EGP</p>
+            </div>
+            <div class="col-4">
+                <img src="~/images/Book 11.jpg" alt="Book 11" />
+                <h4>The HOBBIT</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50 EGP</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="~/images/Book 12.jpg" alt="Book 12" />
+                <h4>Anna Karenina</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50 EGP</p>
+            </div>
+            <div class="col-4">
+                <img src="~/images/Book 13.jpg" alt="Book 13" />
+                <h4>Watership Down</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50 EGP</p>
+            </div>
+            <div class="col-4">
+                <img src="~/images/Book 14.jpg" alt="Book 14" />
+                <h4>All The Night We Cannot See</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>50 EGP</p>
+            </div>
+            <div class="col-4">
+                <img src="~/images/Book 15.jpg" alt="Book 15" />
+                <h4>The HOBBIT</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50 EGP</p>
+            </div>
+        </div>
+    </div>
+    <!------------------offer ------------>
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="~/images/offer-Book.jpg" class="offer-img" />
+                </div>
+                <div class="col-2">
+                    <p>Available on Book Room</p>
+                    <br />
+                    <h2>I Don't Want To Die Poor</h2>
+                    <br />
+                    <small>
+                        Making Michael Arceneaux's I Don't Want to Die Poor required
+                        reading in high schools across the country would help a lot of
+                        young people think twice about the promise that going to college
+                        at any cost is the only path to upward social mobility.
+                    </small>
+                    <a href="#" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------testimonial-------------------->
+    <div class="testimonial">
+        <div class="small-container">
+            <div div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                        "They say nothing lasts forever but they're just scared it will last longer than they can love it."
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <img src="~/images/books.png" alt="zeeshansaeed" />
+                    <h3>Mohamed Adel</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                        "It's the possibility of having a dream come true that makes life interesting."
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="~/images/books.png" alt="zeeshansaeed" />
+                    <h3>Ismaiel El Hussien</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>
+                        "What's the point of having a voice if you're gonna be silent in those moments you shouldn't be?"
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <img src="~/images/books.png" alt="zeeshansaeed" />
+                    <h3>Amr Basiony</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------footer------------------- -->
+    <div id="containerFooter">
+
+        <div id="webFooter">
+            <h3> online store </h3>
+            <p><a href="/Index/arabicbooks">Arabic Books</a></p>
+            <p><a href="/Index/ebook">English Books</a></p>
+            <p><a href="/Index/italianbooks">Italian books</a></p>
+            <p><a href="/Index/spanishbooks">Spanish books</a></p>
+        </div>
+        <div id="webFooter">
+            <h3> helpful link </h3>
+            <p> <a href="/Index/index">Home</a> </p>
+            <p> about us </p>
+            <p><a href="/Index/contact">contact</a> </p>
+        </div>
+        <div id="webFooter">
+            <h3> Follow Us </h3>
+            <p> Facebook </p>
+            <p> Instagram </p>
+            <p> Youtube </p>
+            <p> Twitter  </p>
+        </div>
+        <div id="webFooter">
+            <h3> Store Location </h3>
+            <p> <a href="https://goo.gl/maps/E7gmKUcg3mKDbMZE8" target="_blank">6 October</a> </p>
+            <p> <a href="https://goo.gl/maps/c2RiEaxQYtzk4K826" target="_blank">Haram</a></p>
+            <p><a href="https://goo.gl/maps/h9Ycs5YVQmjdYcjH7" target="_blank">New Cairo</a> </p>
+            <p> <a href="https://goo.gl/maps/hfxs8KKNHgLC3VnF7" target="_blank">Nasr City</a></p>
+            <p> + many more </p>
+        </div>
+    </div>
+
+    <div id="credit">
+        <a href="https://www.instagram.com/mohamedadel_4/" target="_blank"> © Mohamed Adel </a> &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp <a href="https://www.instagram.com/amrbasiony300/" target="_blank"> Amr Basiony </a> &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp
+        <a href="https://www.instagram.com/ismail_elhussein/" target="_blank"> ismail Elhussein </a> &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp <a href="https://www.instagram.com/karimkhalill_/" target="_blank"> karim khalill</a>
+        &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp <a href="https://www.instagram.com/ma_rk_malak/" target="_blank"> Mark Malak </a>
+    </div>
+    <!-- ---------Javascript for toggle menu------------- -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
+
+

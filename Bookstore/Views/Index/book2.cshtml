@@ -1,0 +1,179 @@
+﻿
+@{
+    ViewBag.Title = "book2";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book-detailpage | Book Room </title>
+    <link rel="stylesheet" href="~/CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/29/29302.png" type="image/gif" sizes="16x16">
+
+    <link href="https://fonts.googleapis.com/css2?
+      family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+          rel="stylesheet" />
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <!------------------ Header ------------------>
+    @{
+        if (Request.Cookies["username"] != null)
+        {
+            @Html.Partial("nav_user")
+        }
+        else
+        {
+            @Html.Partial("nav_notuser")
+        }
+    }
+
+    <!-- ----------single product details------------- -->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="~/images/Book 5.jpg" alt="Book4" width="68%" />
+            </div>
+            <div class="col-2">
+                <p> <a href="/Index/index">Home</a>  / Book Room</p>
+                <h1>Watership Down By Richard Adams</h1>
+                <h4>50 EGP</h4>
+                <input type="number" value="1" />
+                <a href="" class="btn">Add To Cart</a>
+                <a href="/Index/favorite" target="_blank" class="btn1" title="Add To Favorite">❤️</a>
+                <h3>Book Deatails <i class="fa fa-indent"></i></h3>
+                <br />
+                <p>
+                    Set in England's Downs, a once idyllic rural landscape, this
+                    stirring tale of adventure, courage and survival follows a band of
+                    very special creatures on their flight from the intrusion of
+                    man and the certain destruction of their home. Led by a stouthearted
+                    pair of friends, they journey forth from their native Sandleford
+                    Warren through the harrowing trials posed by predators and adversaries,
+                    to a mysterious promised land and a more perfect society.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------title----------------- -->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Books</h2>
+            <p class="view"><a href="/Index/ebook">View More</a></p>
+        </div>
+    </div>
+    <!-- --------------Product-------------- -->
+    <div class="small-container">
+        <div class="row">
+            <div class="col-4">
+                <img src="~/images/Book 3.jpg" alt="Book 3" />
+                <h4>Wow no thank you</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50 EGP</p>
+            </div>
+            <div class="col-4">
+                <a href="/Index/book1">
+                    <img src="~/images/Book 4.jpg" alt="Book 4" />
+                </a>
+                <h4>Anna Karenina</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50 EGP</p>
+            </div>
+            <div class="col-4">
+                <img src="~/images/Book 6.jpg" alt="Book 6" />
+                <h4>All The Night We Cannot See</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>50 EGP</p>
+            </div>
+            <div class="col-4">
+                <img src="~/images/Book 7.jpg" alt="Book 7" />
+                <h4>The HOBBIT</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>50 EGP</p>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------footer------------------- -->
+    <div id="containerFooter">
+
+        <div id="webFooter">
+            <h3> online store </h3>
+            <p><a href="/Index/arabicbooks">Arabic Books</a></p>
+            <p><a href="/Index/ebook">English Books</a></p>
+            <p><a href="/Index/italianbooks">Italian books</a></p>
+            <p><a href="/Index/spanishbooks">Spanish books</a></p>
+        </div>
+        <div id="webFooter">
+            <h3> helpful link </h3>
+            <p> <a href="/Index/index">Home</a> </p>
+            <p> about us </p>
+            <p><a href="/Index/contact">contact</a> </p>
+        </div>
+        <div id="webFooter">
+            <h3> Follow Us </h3>
+            <p> Facebook </p>
+            <p> Instagram </p>
+            <p> Youtube </p>
+            <p> Twitter  </p>
+        </div>
+        <div id="webFooter">
+            <h3> Store Location </h3>
+            <p> <a href="https://goo.gl/maps/E7gmKUcg3mKDbMZE8" target="_blank">6 October</a> </p>
+            <p> <a href="https://goo.gl/maps/c2RiEaxQYtzk4K826" target="_blank">Haram</a></p>
+            <p><a href="https://goo.gl/maps/h9Ycs5YVQmjdYcjH7" target="_blank">New Cairo</a> </p>
+            <p> <a href="https://goo.gl/maps/hfxs8KKNHgLC3VnF7" target="_blank">Nasr City</a></p>
+            <p> + many more </p>
+        </div>
+    </div>
+
+    <div id="credit">
+        <a href="https://www.instagram.com/mohamedadel_4/" target="_blank"> © Mohamed Adel </a> &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp <a href="https://www.instagram.com/amrbasiony300/" target="_blank"> Amr Basiony </a> &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp
+        <a href="https://www.instagram.com/ismail_elhussein/" target="_blank"> ismail Elhussein </a> &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp <a href="https://www.instagram.com/karimkhalill_/" target="_blank"> karim khalill</a>
+        &nbsp&nbsp&nbsp | &nbsp&nbsp&nbsp <a href="https://www.instagram.com/ma_rk_malak/" target="_blank"> Mark Malak </a>
+    </div>
+    <!-- ---------Javascript for toggle menu------------- -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
+
+
