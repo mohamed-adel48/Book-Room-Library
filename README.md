@@ -1,7 +1,7 @@
 # Book-Room-Library - Online Bookstore
 - This repository hosts the front-end and back-end code for a comprehensive book-selling platform.
 - This website was created for a college project.
-- 
+---
 ## Pages Included:
 * **Home Page**:
   - Discover a curated selection of books, explore featured reads, and view special promotions.
